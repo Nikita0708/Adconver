@@ -1,0 +1,119 @@
+.form_main {
+  width: 235px;
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+.form_title {
+  font-size: 24px;
+  line-height: 0.7;
+  margin-bottom: 25px;
+}
+.main_label {
+  color: var(--grey);
+  font-size: 14px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+.main_input {
+  border: 1px solid var(--input-border);
+  background-color: transparent;
+  outline: 0;
+  width: calc(100% - 10px);
+  height: 41.2px;
+  border-radius: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.form_category {
+  border: 1px solid var(--input-border);
+  width: calc(100% - 29.5px);
+  border-radius: 5px;
+  padding-left: 14px;
+  padding-right: 17.5px;
+  margin-bottom: 25px;
+}
+.form_select {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.select_dropdown {
+  margin-right: 0;
+  margin-left: auto;
+}
+.select_dropdown__active {
+  transform: rotateX(180deg);
+}
+.form_item_title {
+  font-size: 14px;
+  line-height: 1.2;
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.categorie {
+  color: var(--grey);
+  font-size: 14px;
+  line-height: 1.45;
+  cursor: pointer;
+}
+.categories {
+  display: block;
+  padding-bottom: 11px;
+  z-index: 100;
+}
+.categories__disabled {
+  display: none;
+}
+.categories_item {
+  display: flex;
+  align-items: center;
+}
+.categories_item:not(:last-child) {
+  margin-bottom: 4px;
+}
+.checkbox {
+  cursor: pointer;
+  width: 17.98px;
+  height: 17.98px;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 1px solid var(--input-border);
+  margin-right: 6px;
+}
+.category_amount {
+  width: 25px;
+  height: 20px;
+  background: linear-gradient(
+    232deg,
+    rgba(189, 0, 255, 0.12) 0%,
+    rgba(143, 0, 255, 0.12) 100%
+  );
+  margin-left: 6px;
+  border-radius: 5px;
+  & span {
+    margin-left: 6px;
+    font-size: 12px;
+    background: var(--ad, linear-gradient(232deg, #bd00ff 0%, #8f00ff 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.form_btn {
+  width: 235px;
+  height: 38px;
+  border-radius: 100px;
+  background: var(--ad, linear-gradient(232deg, #bd00ff 0%, #8f00ff 100%));
+  box-shadow: 0px 4px 40px 0px rgba(184, 0, 255, 0.3);
+
+  color: var(--white);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+}
