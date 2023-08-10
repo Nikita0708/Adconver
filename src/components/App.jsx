@@ -1,13 +1,16 @@
-import { Header } from './Header';
 import { Main } from './Main';
-import { MobileHeader } from './MobileHeader';
+import { AdminPanel } from './AdminPanel';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export const App = () => {
   return (
     <>
-      <Header />
-      <MobileHeader />
-      <Main />
+      <Router>
+        <Routes>
+          <Route path="*" element={<Main />} />
+          <Route path="/Adconver/admin" element={<AdminPanel />} />
+        </Routes>
+      </Router>
     </>
   );
 };

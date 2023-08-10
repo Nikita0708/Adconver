@@ -1,3 +1,5 @@
+import { MobileHeader } from './MobileHeader';
+
 export const Header = () => {
   return (
     <>
@@ -40,6 +42,7 @@ export const Header = () => {
           </ul>
         </div>
       </header>
+      <MobileHeader />
     </>
   );
 };

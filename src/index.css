@@ -94,3 +94,17 @@ h3 {
   opacity: 0;
   pointer-events: none;
 }
+.admin-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.admin-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.admin-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
